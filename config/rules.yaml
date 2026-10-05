@@ -1,0 +1,51 @@
+default:
+  title_min_chars: 80
+  title_max_chars: 200
+  min_bullets: 5
+  min_images: 7
+  min_rating: 4.0
+
+overrides:
+  ja-JP:
+    title_max_chars: 100
+  ar-SA:
+    title_min_chars: 40
+
+# Image resolution rule
+# VERIFY: 1000px long edge is widely cited as Amazon's zoom threshold --
+# double-check current Seller Central help pages before telling a client this.
+images:
+  min_long_edge_px: 1000
+
+# A+ Content module pixel specs
+# VERIFY ALL OF THESE in Seller Central before using on a real client.
+# A+ modules come in many layouts with different sizes -- these are
+# placeholders for ONE common module per type, not every possible module.
+aplus:
+  tolerance_px: 5
+  specs:
+    basic_desktop:
+      width: 970
+      height: 600
+    premium_desktop:
+      width: 970
+      height: 600
+    premium_mobile:
+      width: 720
+      height: 360
+
+# How much each check is worth in the 100-point score
+weights:
+  Title length: 20
+  Bullet points: 15
+  Image count: 20
+  A+ Content: 25
+  Rating: 20
+  Image resolution: 10
+  Product video: 5
+  A+ image dimensions: 15
+
+  image_prep:
+  target_size: 2000
+  min_fill_percent_warning: 85
+  jpg_quality: 90

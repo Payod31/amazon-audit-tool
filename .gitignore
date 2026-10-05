@@ -1,0 +1,43 @@
+# --- Your existing entries ---
+venv/
+.env
+data/
+__pycache__/
+
+# --- Python (covers the rest of what __pycache__/ doesn't) ---
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+
+# --- Other virtual environment names, in case this ever gets recreated differently ---
+.venv/
+env/
+
+# --- Streamlit secrets -- never commit this if it ever gets created ---
+.streamlit/secrets.toml
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Editor/IDE junk ---
+.vscode/
+.idea/
+*.swp
+
+# --- Local scratch / temp files the app itself creates ---
+*.tmp
+/tmp/
+
+# --- CLIP / Hugging Face model cache ---
+# This should NEVER end up inside the project folder -- it belongs in
+# ~/.cache/huggingface on each machine (the default location, outside this
+# repo). Listed here only as a safety net in case it's ever pointed at a
+# local folder by mistake.
+.cache/
+hf_cache/
+
+# --- Large generated outputs you don't want bloating the repo ---
+*.xlsx.bak
+/downloads/

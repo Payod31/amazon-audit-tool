@@ -1,0 +1,23 @@
+# Core app
+streamlit
+pandas
+openpyxl
+requests
+pyyaml
+
+# Reading legacy .xls files in the "Reorganize links" / "Image match check" uploaders
+xlrd
+
+# Image match check (local CLIP model -- no API key needed)
+# NOTE: install torch and torchvision separately with the CPU-only index
+# first, or this will pull a much larger GPU build by default:
+#   pip install --index-url https://download.pytorch.org/whl/cpu torch torchvision
+#   pip install -r requirements.txt
+# torchvision isn't used directly by the CLIP check itself -- it's needed
+# because without it, `transformers` throws a ModuleNotFoundError on
+# "torchvision" for ~100 unrelated vision models every time Streamlit's
+# file watcher scans loaded modules (harmless but very noisy in the logs).
+torch
+torchvision
+transformers
+pillow

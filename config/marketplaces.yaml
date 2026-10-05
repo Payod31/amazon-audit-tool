@@ -1,0 +1,30 @@
+amazon_us:
+  channel: amazon
+  country: United States
+  domain: amazon.com
+  currency: USD
+  languages: [en-US]
+  default_language: en-US
+  sp_api_marketplace_id: ATVPDKIKX0DER
+  region: north_america
+
+amazon_de:
+  channel: amazon
+  country: Germany
+  domain: amazon.de
+  currency: EUR
+  languages: [de-DE, en-GB]
+  default_language: de-DE
+  sp_api_marketplace_id: A1PA6795UKMFR9
+  region: europe
+
+amazon_sa:
+  channel: amazon
+  country: Saudi Arabia
+  domain: amazon.sa
+  currency: SAR
+  languages: [ar-SA, en-SA]
+  default_language: ar-SA
+  sp_api_marketplace_id: A17E79C6D8DWNP
+  region: europe
+  rtl_languages: [ar-SA]
